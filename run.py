@@ -46,3 +46,6 @@ def actor_counter():
     else:
         response = ActorSystem().ask(ACTOR_COUNTER, "What's my count?")
         return response
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=3000)
